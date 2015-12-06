@@ -9,7 +9,6 @@
     <style>
         body{
             margin: 0;
-            height: auto;
         }
         .container{
             width: 100%;
@@ -30,7 +29,8 @@
         var streamer = prompt("Digite o nome do streamer que você deseja assistir");
         var height = window.innerHeight;
         $("#stream").css("height", height).css("width", "70%").attr("src", "http://embed.azubu.tv/" + streamer);
-        $("#chat").css("height", height).css("width", "30%").attr("src", "http://www.azubu.tv/" + streamer + "/chatpopup?chatroom=azubu." + streamer + ".br");
+        //$("#chat").css("height", height).css("width", "30%").attr("src", "http://www.azubu.tv/" + streamer + "/chatpopup?chatroom=azubu." + streamer + ".br");
+        alert("http://www.azubu.tv/" + streamer + "/chatpopup?chatroom=azubu." + streamer + ".br");
     });
 </script>
 </html>
