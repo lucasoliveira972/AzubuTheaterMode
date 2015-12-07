@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,8 +29,7 @@
         var streamer = prompt("Digite o nome do streamer que você deseja assistir");
         var height = window.innerHeight;
         $("#stream").css("height", height).css("width", "70%").attr("src", "http://embed.azubu.tv/" + streamer);
-        //$("#chat").css("height", height).css("width", "30%").attr("src", "http://www.azubu.tv/" + streamer + "/chatpopup?chatroom=azubu." + streamer + ".br");
-        alert("http://www.azubu.tv/" + streamer + "/chatpopup?chatroom=azubu." + streamer + ".br");
+        $("#chat").css("height", height).css("width", "30%").attr("src", "http://oldschool.azubu.tv/" + streamer + "/chatpopup");
     });
 </script>
 </html>
