@@ -19,7 +19,7 @@
 <body>
 <div class="container">
     <iframe id='stream' style="float: left;" frameborder='0' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-    <iframe id='chat' src="http://oldschool.azubu.tv/axt/chatpopup" style="float: left;" frameborder='0'></iframe>
+    <iframe id='chat' style="float: left;" frameborder='0'></iframe>
 </div>
 </body>
 <!-- Não faz diferença colocar o JS no final, já que só vai carregar a URL depois, iirc. -->
@@ -29,7 +29,7 @@
         var streamer = prompt("Digite o nome do streamer que você deseja assistir");
         var height = window.innerHeight;
         $("#stream").css("height", height).css("width", "70%").attr("src", "http://embed.azubu.tv/" + streamer);
-        //$("#chat").css("height", height).css("width", "30%").attr("src", "http://oldschool.azubu.tv/" + streamer + "/chatpopup");
+        $("#chat").css("height", height).css("width", "30%").attr("src", "http://oldschool.azubu.tv/" + streamer + "/chatpopup");
     });
 </script>
 </html>
