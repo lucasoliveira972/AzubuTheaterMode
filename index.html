@@ -22,14 +22,14 @@
     <iframe id='chat' style="float: left;" frameborder='0'></iframe>
 </div>
 </body>
-<!-- Não faz diferença colocar o JS no final, já que só vai carregar a URL depois, iirc. -->
+<!-- Não faz diferença colocar o JS no final, já que só vai carregar o iframe depois, iirc. -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
     $(document).ready(function(){
         var streamer = prompt("Digite o nome do streamer que você deseja assistir");
         var height = window.innerHeight;
         $("#stream").css("height", height).css("width", "70%").attr("src", "http://embed.azubu.tv/" + streamer);
-        $("#chat").css("height", height).css("width", "30%").attr("src", "http://oldschool.azubu.tv/" + streamer + "/chatpopup");
+        $("#chat").css("height", height).css("width", "30%").attr("src", "http://azubu.tv/" + streamer + "/chatpopup");
     });
 </script>
 </html>
